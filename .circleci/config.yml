@@ -21,3 +21,8 @@ jobs:
           key: yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - ~/workspace/node_modules
+workflows:
+  version: 2
+  fuga:
+    jobs:
+      - hoge
